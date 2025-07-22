@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS HealthMetrics (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    code CHAR(36) NOT NULL DEFAULT UUID(),
+    hiking_trail_id INT UNSIGNED NOT NULL,
+    min_heart_rate INT UNSIGNED,
+    max_heart_rate INT UNSIGNED,
+    average_heart_rate INT UNSIGNED,
+    calories_burned INT UNSIGNED,
+    steps INT UNSIGNED,
+    elevation_gain INT UNSIGNED,
+    min_pace FLOAT UNSIGNED,
+    max_pace FLOAT UNSIGNED,
+    average_pace FLOAT UNSIGNED,
+    min_speed FLOAT UNSIGNED,
+    max_speed FLOAT UNSIGNED,
+    average_speed FLOAT UNSIGNED,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    FOREIGN KEY (hiking_trail_id) REFERENCES HikingTrail(id)
+);
