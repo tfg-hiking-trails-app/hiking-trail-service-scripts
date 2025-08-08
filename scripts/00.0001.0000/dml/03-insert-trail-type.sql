@@ -1,4 +1,4 @@
-INSERT INTO TrailType (type)
+INSERT INTO TrailType (trail)
 VALUES
     ('Loop'),
     ('Round trip'),

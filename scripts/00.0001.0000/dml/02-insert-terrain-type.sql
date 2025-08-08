@@ -1,4 +1,4 @@
-INSERT INTO TerrainType (type)
+INSERT INTO TerrainType (terrain)
 VALUES
     ('Compacted soil'),
     ('Loose soil'),
