@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS HikingTrail (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     code CHAR(36) NOT NULL DEFAULT UUID(),
+    user_code CHAR(36) NOT NULL,
     difficulty_level_id INT UNSIGNED,
     terrain_type_id INT UNSIGNED,
     trail_type_id INT UNSIGNED,
