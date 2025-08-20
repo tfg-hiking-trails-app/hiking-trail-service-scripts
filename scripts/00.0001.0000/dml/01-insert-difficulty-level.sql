@@ -1,6 +1,6 @@
 INSERT INTO DifficultyLevel (difficulty_level)
 VALUES
-    ('Easy'),
-    ('Medium'),
-    ('Hard'),
-    ('Very Hard');
+    ('easy'),
+    ('medium'),
+    ('hard'),
+    ('very-hard');
