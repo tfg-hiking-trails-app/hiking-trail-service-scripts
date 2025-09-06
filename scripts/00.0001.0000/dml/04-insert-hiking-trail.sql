@@ -1,4 +1,4 @@
-INSERT INTO HikingTrail (account_code, difficulty_level_id, terrain_type_id, trail_type_id, name, description, pet_friendly, start_time, end_time, ubication_latitude, ubication_longitude)
+INSERT INTO HikingTrail (account_code, difficulty_level_id, terrain_type_id, trail_type_id, name, description, pet_friendly, start_time, end_time, location_latitude, location_longitude)
 VALUES
     ('e0533df9-1c00-4308-a1fe-edb7ab0215d2', 1, 1, 1, 'Easy Trail', 'A nice and easy trail for beginners.', true, '2025-08-03 12:00:00', '2025-08-03 14:30:00', 40.7128, -74.0060),
     ('e0533df9-1c00-4308-a1fe-edb7ab0215d2', 2, 2, 2, 'Medium Trail', 'A moderately challenging trail.', true, '2025-08-03 09:00:00', '2025-08-03 15:00:00', 34.0522, -118.2437),
