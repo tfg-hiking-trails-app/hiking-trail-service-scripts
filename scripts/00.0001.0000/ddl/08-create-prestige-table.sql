@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS Prestiges (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    code CHAR(36) NOT NULL DEFAULT UUID(),
+    receiver_account_code CHAR(36) NOT NULL,
+    giver_account_code CHAR(36) NOT NULL,
+    hiking_trail_id INT UNSIGNED,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    FOREIGN KEY (hiking_trail_id) REFERENCES HikingTrail(id)
+);
