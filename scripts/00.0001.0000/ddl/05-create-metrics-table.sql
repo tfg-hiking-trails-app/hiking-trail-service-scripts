@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Metrics (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    code CHAR(36) NOT NULL DEFAULT UUID(),
+    code CHAR(36) NOT NULL DEFAULT (UUID()),
     hiking_trail_id INT UNSIGNED,
     distance INT NOT NULL COMMENT 'Distancia total del recorrido en metros. TotalDistance del archivo .fit.',
     duration DECIMAL(13, 3) UNSIGNED COMMENT 'Duración total del recorrido en segundos. TotalElapsedTime del archivo .fit.',

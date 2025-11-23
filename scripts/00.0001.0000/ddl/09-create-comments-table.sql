@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Comments (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    code CHAR(36) NOT NULL DEFAULT UUID(),
+    code CHAR(36) NOT NULL DEFAULT (UUID()),
     account_code CHAR(36) NOT NULL,
     comment TEXT NOT NULL,
     hiking_trail_id INT UNSIGNED,

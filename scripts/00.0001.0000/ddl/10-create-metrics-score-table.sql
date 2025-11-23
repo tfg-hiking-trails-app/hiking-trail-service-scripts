@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS MetricsScore (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    code CHAR(36) NOT NULL DEFAULT UUID(),
+    code CHAR(36) NOT NULL DEFAULT (UUID()),
     account_code CHAR(36) NOT NULL,
     distance TINYINT UNSIGNED DEFAULT 0 COMMENT 'Importancia de la distancia (0-10)' CHECK (distance BETWEEN 0 AND 10),
     duration TINYINT UNSIGNED DEFAULT 0 COMMENT 'Importancia de la duración (0-10)' CHECK (duration BETWEEN 0 AND 10),
